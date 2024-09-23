@@ -18,7 +18,6 @@ public class MiProceso extends Thread {
 		for (int i = 0; i < 100; i++) {
 			System.out.println(Thread.currentThread().getName() + "-> " + contador.getContador());
 			int aux = contador .getContador();
-			aux++;
 			contador.setContador(aux); 
 			/*try {
 				Thread.sleep(1);
