@@ -2,11 +2,10 @@ package paquete_inicial;
 
 public class Contador {
 	
-	private int contador;
+	private static int contador = 1;
 
-	public Contador(int contador) {
+	public Contador() {
 		super();
-		this.contador = contador;
 	}
 
 	public int getContador() {

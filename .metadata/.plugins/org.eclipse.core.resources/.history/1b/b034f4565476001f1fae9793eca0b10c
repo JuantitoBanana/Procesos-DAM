@@ -1,5 +1,0 @@
-package paquete_inicial;
-
-public class MiProcesp extends Thread {
-
-}
