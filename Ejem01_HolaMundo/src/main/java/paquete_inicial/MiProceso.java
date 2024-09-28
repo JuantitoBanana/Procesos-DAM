@@ -7,7 +7,7 @@ public class MiProceso extends Thread {
 	
 	public MiProceso(String name) {
 		super(name);
-		// TODO Auto-generated constructor stub
+
 	}
 
 	@Override
