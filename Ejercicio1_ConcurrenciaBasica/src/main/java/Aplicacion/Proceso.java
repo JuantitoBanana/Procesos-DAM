@@ -19,10 +19,12 @@ public class Proceso extends Thread{
 		while (contador.getContador() < numVueltas) {
 			contLocal++;
 			synchronized (contador) {
-				System.out.println(Thread.currentThread().getName() + " -> " + contador.getContador()+ " [Número de veces que entra:" + contLocal +"]" );
-				int aux = contador.getContador();
-				aux += intervalo;
-				contador.setContador(aux);
+				if (contador.getContador() <= numVueltas) {
+					System.out.println(Thread.currentThread().getName() + " -> " + contador.getContador()+ " [Número de veces que entra:" + contLocal +"]" );
+					int aux = contador.getContador();
+					aux += intervalo;
+					contador.setContador(aux);
+				}
 			}
 		}
 	}
