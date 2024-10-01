@@ -5,6 +5,7 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="Aplicacion.Contador"/>
-    <fullyQualifiedTypeName name="Aplicacion.Proceso"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="Aplicacion.Proceso"/>
 </qualifiedTypeNameHistroy>

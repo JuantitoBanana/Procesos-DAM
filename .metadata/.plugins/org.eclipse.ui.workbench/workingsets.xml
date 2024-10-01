@@ -3,9 +3,9 @@
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1726469616623_0" label="Java Main Sources" name="Java Main Sources"/>
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1726469616637_1" label="Java Test Sources" name="Java Test Sources"/>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1726470161371_3" label="1ºEva" name="1ºEva">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Ejercicio2_RunnablePrioridades" type="4"/>
 <item elementID="=Ejercicio1_ConcurrenciaBasica" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=Ejem03_Runnable" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=Ejem01_HolaMundo" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1726470173124_4" label="2ºEva" name="2ºEva"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1726469617533_2" label="Window Working Set" name="Aggregate for window 1726469617533"/>
