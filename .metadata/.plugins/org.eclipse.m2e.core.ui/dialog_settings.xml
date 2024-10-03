@@ -50,6 +50,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Ejercicio3_GruposYPrioridades"/>
+			<item value="Ejem04_GruposYPrioridades"/>
 			<item value="Ejercicio2_RunnablePrioridades"/>
 			<item value="Ejem03_Runnable"/>
 			<item value="Ejercicio1_ConcurrenciaBasica"/>
