@@ -50,6 +50,9 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Ejem06_WaitNotify"/>
+			<item value="Ejercicio4_MatandoProceso"/>
+			<item value="Ejercicio4_MatandoProcesos"/>
 			<item value="Ejem05_MatandoProcesos"/>
 			<item value="Ejercicio3_GruposYPrioridades"/>
 			<item value="Ejem04_GruposYPrioridades"/>
