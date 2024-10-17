@@ -17,7 +17,7 @@ public class Mensaje {
 
 	@Override
 	public String toString() {
-		return "Mensaje [mensaje=" + mensaje + "]";
+		return mensaje;
 	}
 	
 	

@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Grado\Procesos-DAM\Ejem06_Wait_Notify\src\main\java\Aplicacion\Aplicacion.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -50,6 +51,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Ejercicio7_WaitNotify2"/>
+			<item value="Ejem06_Wait_Notify"/>
 			<item value="Ejem06_WaitNotify"/>
 			<item value="Ejercicio4_MatandoProceso"/>
 			<item value="Ejercicio4_MatandoProcesos"/>

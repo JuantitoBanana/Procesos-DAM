@@ -12,7 +12,12 @@
     <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
     <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
     <fullyQualifiedTypeName name="Aplicacion.Contador"/>
-    <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="Aplicacion.Proceso"/>
+    <fullyQualifiedTypeName name="Aplicacion.ImpresoraMensajes"/>
+    <fullyQualifiedTypeName name="Aplicacion.Mensaje"/>
     <fullyQualifiedTypeName name="java.lang.ThreadGroup"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="Aplicacion.Impresora"/>
 </qualifiedTypeNameHistroy>
