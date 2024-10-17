@@ -16,8 +16,9 @@
     <fullyQualifiedTypeName name="Aplicacion.ImpresoraMensajes"/>
     <fullyQualifiedTypeName name="Aplicacion.Mensaje"/>
     <fullyQualifiedTypeName name="java.lang.ThreadGroup"/>
-    <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="Aplicacion.Impresora"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="Aplicacion.Proceso2"/>
 </qualifiedTypeNameHistroy>

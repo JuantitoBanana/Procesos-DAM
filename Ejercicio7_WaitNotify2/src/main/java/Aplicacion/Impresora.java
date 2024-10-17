@@ -11,14 +11,6 @@ public class Impresora extends Thread{
 		this.lista = lista;
 	}
 
-	public int getNumero() {
-		return numero;
-	}
-
-	public void setNumero(int numero) {
-		this.numero = numero;
-	}
-
 	@Override
 	public void run() {
 		super.run();

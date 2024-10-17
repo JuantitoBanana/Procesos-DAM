@@ -27,7 +27,7 @@ public class App {
 				}
 			}
 			try {
-				Thread.sleep(3000);
+				Thread.sleep(5000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -36,7 +36,7 @@ public class App {
 					listaNum.notify();
 				}
 			}
-			System.out.println("------------------------------------");
+			System.out.println("Números generados " + i + " veces\n");
 			
 		}
 	}
