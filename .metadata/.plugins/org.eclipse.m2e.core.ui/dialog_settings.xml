@@ -51,6 +51,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Ejem07_ProductorConsumidor"/>
 			<item value="Ejercicio7_WaitNotify2"/>
 			<item value="Ejem06_Wait_Notify"/>
 			<item value="Ejem06_WaitNotify"/>
