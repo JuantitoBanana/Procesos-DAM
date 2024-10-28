@@ -7,7 +7,7 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Ejem05_MatandoProcesos" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Ejercicio4_MatandoProceso" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Ejem06_Wait_Notify" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Ejercicio7_WaitNotify2" type="4"/>
+<item elementID="=Ejercicio7_WaitNotify2" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Ejem07_ProductorConsumidor" type="4"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1726470173124_4" label="2ºEva" name="2ºEva"/>

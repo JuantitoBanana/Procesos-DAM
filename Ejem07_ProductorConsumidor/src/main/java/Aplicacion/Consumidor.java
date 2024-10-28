@@ -1,24 +1,32 @@
 package Aplicacion;
 
-public class Consumidor extends Thread{
 
-	Informacion info;
+public class Consumidor extends Thread {
+	private Informacion info;
+	private int cont;
 	
-	public Consumidor(Informacion info) {
+	public  Consumidor(Informacion info, String name) {
+		super(name);
 		this.info = info;
 	}
-
+	
+	public int getCont() {
+		return cont;
+	}
+	
 	@Override
 	public void run() {
-		super.run();
-		try {
-			Thread.sleep(1500);
-		} catch (InterruptedException e) {
-			
+		// TODO Auto-generated method stub
+		while() {
+			cont++;
+			System.out.println(Thread.currentThread().getName() + " - " + info.consumir());
 		}
-		for (int i = 0; i < 10; i++) {
-			System.out.println(info.consumir() + "\n----------------------");
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
 		}
 	}
+	
 	
 }
