@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Grado\Procesos-DAM"/>
 			<item value="C:\Grado\Procesos-DAM\Ejem06_Wait_Notify\src\main\java\Aplicacion\Aplicacion.java"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -46,25 +47,11 @@
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
 			<item value="gf.com"/>
-			<item value="gregoriofer.local"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="Ejem08_Demonios"/>
-			<item value="Ejem07_ProductorConsumidor"/>
-			<item value="Ejercicio7_WaitNotify2"/>
-			<item value="Ejem06_Wait_Notify"/>
-			<item value="Ejem06_WaitNotify"/>
-			<item value="Ejercicio4_MatandoProceso"/>
-			<item value="Ejercicio4_MatandoProcesos"/>
-			<item value="Ejem05_MatandoProcesos"/>
-			<item value="Ejercicio3_GruposYPrioridades"/>
-			<item value="Ejem04_GruposYPrioridades"/>
-			<item value="Ejercicio2_RunnablePrioridades"/>
-			<item value="Ejem03_Runnable"/>
-			<item value="Ejercicio1_ConcurrenciaBasica"/>
-			<item value="Ejem01_HolaMundo"/>
+			<item value="Ejercicio8_ProductorConsumidorProfesor"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
