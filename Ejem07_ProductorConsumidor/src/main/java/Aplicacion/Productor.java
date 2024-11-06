@@ -1,28 +1,24 @@
 package Aplicacion;
 
-public class Productor extends Thread{
 
-	Informacion info;
+public class Productor extends Thread {
+	private Informacion info;
 	
-	public Productor(Informacion info) {
-		this.info = info;
+	
+	public Productor(Informacion i) {
+		super();
+		this.info = i;
 	}
+
 
 	@Override
 	public void run() {
-		super.run();
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		
-		for (int i = 0; i < 10; i++) {
+		// TODO Auto-generated method stub
 			
+		for(int i = 0;i<10;i++) {
 			info.producir();
 		}
+		
+		
 	}
-
-
-	
 }

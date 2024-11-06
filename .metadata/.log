@@ -7211,14 +7211,21 @@ Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/victor
 	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:465)
 	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:170)
 	... 4 more
+<<<<<<< HEAD
 !SESSION 2024-11-06 15:42:48.632 -----------------------------------------------
 eclipse.buildId=4.33.0.20240905-0613
 java.version=21.0.4
+=======
+!SESSION 2024-10-28 08:15:58.873 -----------------------------------------------
+eclipse.buildId=4.33.0.20240905-0613
+java.version=21.0.5
+>>>>>>> origin/main
 java.vendor=Eclipse Adoptium
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
 Framework arguments:  -product org.eclipse.epp.package.committers.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.committers.product
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.ui 4 4 2024-11-06 15:51:05.563
 !MESSAGE Unable to create part
 !STACK 1
@@ -7503,10 +7510,16 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 !ENTRY org.eclipse.egit.ui 2 0 2024-11-06 19:26:26.370
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\usuario'. If this is
+=======
+!ENTRY org.eclipse.egit.ui 2 0 2024-10-28 08:17:30.504
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\bladiaju'. If this is
+>>>>>>> origin/main
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.ui 4 0 2024-11-06 19:28:31.559
 !MESSAGE Unhandled event loop exception
 !STACK 0
@@ -7990,6 +8003,222 @@ Stack Trace
 	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
 	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:415)
 	at org.eclipse.jface.action.ActionContributionItem$$Lambda/0x00000001007cc440.handleEvent(Unknown Source)
+=======
+!ENTRY org.eclipse.jdt.core 4 0 2024-10-28 08:23:01.685
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to delete index file file:/C:/Grado/Procesos-DAM/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:586)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:228)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:99)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1236)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1212)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:831)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:509)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.nio.file.FileSystemException: C:\Grado\Procesos-DAM\.metadata\.plugins\org.eclipse.jdt.core\1865797976.index: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:109)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:584)
+	... 7 more
+
+!ENTRY org.eclipse.ui.ide 4 0 2024-10-28 08:26:21.561
+!MESSAGE Could not import project located at C:\Grado\Procesos-DAM\JuanJoseBlanco_ProductorConsumidor
+!STACK 0
+org.eclipse.ui.internal.wizards.datatransfer.CouldNotImportProjectException: Could not import project located at C:\Grado\Procesos-DAM\JuanJoseBlanco_ProductorConsumidor
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:555)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:246)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.ui.internal.wizards.datatransfer.CouldNotImportProjectException: Could not perform operation:
+A project with name 'Ejem07_ProductorConsumidor' already exists in workspace, and the folder you're trying to import contains a project description file (.project) using this same name.
+
+You should consider renaming either the project in workspace, or editing the .project in selected folder.
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:585)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:542)
+	... 2 more
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-10-28 08:26:33.659
+!MESSAGE Problems occurred refreshing the selected resources.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2024-10-28 08:26:33.659
+!MESSAGE The project description file (.project) for 'Ejem07_ProductorConsumidor' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'Ejem07_ProductorConsumidor' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:970)
+	at org.eclipse.core.internal.resources.Project.updateDescription(Project.java:1429)
+	at org.eclipse.core.internal.resources.File.updateMetadataFiles(File.java:500)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:306)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:126)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:1040)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:1023)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1601)
+	at org.eclipse.ui.actions.RefreshAction.refreshResource(RefreshAction.java:283)
+	at org.eclipse.ui.actions.RefreshAction$2.execute(RefreshAction.java:243)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:112)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider$1$1.runInWorkspace(ResourceMgmtActionProvider.java:232)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.monitoring 2 0 2024-10-28 08:59:27.935
+!MESSAGE UI freeze of 0,62s at 08:59:27.301
+!SUBENTRY 1 org.eclipse.ui.monitoring 1 0 2024-10-28 08:59:27.935
+!MESSAGE Sample at 08:59:27.637 (+0,336s)
+Thread 'main' tid=1 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.base@21.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@21.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$Signaller.block(CompletableFuture.java:1866)
+	at java.base@21.0.5/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	at java.base@21.0.5/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1939)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.matches(LSPDocumentAbstractHandler.java:69)
+	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.lambda$0(LSPDocumentAbstractHandler.java:59)
+	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor$$Lambda/0x000001df263d5ba8.test(Unknown Source)
+	at java.base@21.0.5/java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
+	at java.base@21.0.5/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(AbstractList.java:708)
+	at java.base@21.0.5/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base@21.0.5/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base@21.0.5/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base@21.0.5/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base@21.0.5/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:230)
+	at java.base@21.0.5/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:196)
+	at java.base@21.0.5/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base@21.0.5/java.util.stream.ReferencePipeline.anyMatch(ReferencePipeline.java:632)
+	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.anyMatching(LSPDocumentAbstractHandler.java:59)
+	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler.setEnabled(LSPDocumentAbstractHandler.java:123)
+	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler.setEnabled(LSPDocumentAbstractHandler.java:113)
+	at org.eclipse.lsp4e.operations.rename.LSPRenameHandler.setEnabled(LSPRenameHandler.java:71)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:223)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.setEnabled(E4HandlerProxy.java:134)
+	at java.base@21.0.5/java.lang.invoke.LambdaForm$DMH/0x000001df251ac000.invokeVirtual(LambdaForm$DMH)
+	at java.base@21.0.5/java.lang.invoke.LambdaForm$MH/0x000001df25b60800.invoke(LambdaForm$MH)
+	at java.base@21.0.5/java.lang.invoke.LambdaForm$MH/0x000001df25002c00.invokeExact_MT(LambdaForm$MH)
+	at java.base@21.0.5/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:155)
+	at java.base@21.0.5/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base@21.0.5/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:299)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:233)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:91)
+	at org.eclipse.core.commands.Command.setEnabled(Command.java:856)
+	at org.eclipse.ui.menus.CommandContributionItem.isEnabled(CommandContributionItem.java:932)
+	at org.eclipse.ui.menus.CommandContributionItem.updateMenuItem(CommandContributionItem.java:536)
+	at org.eclipse.ui.menus.CommandContributionItem.update(CommandContributionItem.java:486)
+	at org.eclipse.ui.menus.CommandContributionItem.lambda$2(CommandContributionItem.java:325)
+	at org.eclipse.ui.menus.CommandContributionItem$$Lambda/0x000001df25ad0308.run(Unknown Source)
+	at org.eclipse.ui.menus.CommandContributionItem.updateCommandProperties(CommandContributionItem.java:329)
+	at org.eclipse.ui.menus.CommandContributionItem.lambda$1(CommandContributionItem.java:296)
+	at org.eclipse.ui.menus.CommandContributionItem$$Lambda/0x000001df256b6b30.commandChanged(Unknown Source)
+	at org.eclipse.core.commands.Command$1.run(Command.java:529)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.commands.Command.fireCommandChanged(Command.java:522)
+	at org.eclipse.core.commands.Command.lambda$0(Command.java:1000)
+	at org.eclipse.core.commands.Command$$Lambda/0x000001df254d1238.handlerChanged(Unknown Source)
+	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.fireHandlerChanged(HandlerServiceHandler.java:189)
+	at org.eclipse.core.commands.AbstractHandler.setBaseEnabled(AbstractHandler.java:111)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.isEnabled(HandlerServiceHandler.java:70)
+	at org.eclipse.core.commands.Command.isEnabled(Command.java:832)
+	at org.eclipse.ui.menus.CommandContributionItem.isEnabled(CommandContributionItem.java:933)
+	at org.eclipse.ui.menus.CommandContributionItem.updateMenuItem(CommandContributionItem.java:536)
+	at org.eclipse.ui.menus.CommandContributionItem.update(CommandContributionItem.java:486)
+	at org.eclipse.ui.menus.CommandContributionItem.lambda$2(CommandContributionItem.java:325)
+	at org.eclipse.ui.menus.CommandContributionItem$$Lambda/0x000001df25ad0308.run(Unknown Source)
+	at org.eclipse.ui.menus.CommandContributionItem.updateCommandProperties(CommandContributionItem.java:329)
+	at org.eclipse.ui.menus.CommandContributionItem.lambda$1(CommandContributionItem.java:296)
+	at org.eclipse.ui.menus.CommandContributionItem$$Lambda/0x000001df256b6b30.commandChanged(Unknown Source)
+	at org.eclipse.core.commands.Command$1.run(Command.java:529)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.commands.Command.fireCommandChanged(Command.java:522)
+	at org.eclipse.core.commands.Command.lambda$0(Command.java:1000)
+	at org.eclipse.core.commands.Command$$Lambda/0x000001df254d1238.handlerChanged(Unknown Source)
+	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.fireHandlerChanged(HandlerServiceHandler.java:189)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:116)
+	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.lambda$1(HandlerProxy.java:371)
+	at org.eclipse.ui.internal.handlers.HandlerProxy$$Lambda/0x000001df2561e2a0.handlerChanged(Unknown Source)
+	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
+	at org.eclipse.core.commands.AbstractHandler.setBaseEnabled(AbstractHandler.java:111)
+	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler.setEnabled(LSPDocumentAbstractHandler.java:121)
+	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler.setEnabled(LSPDocumentAbstractHandler.java:113)
+	at org.eclipse.lsp4e.operations.rename.LSPRenameHandler.setEnabled(LSPRenameHandler.java:71)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:223)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.loadHandler(HandlerProxy.java:343)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:221)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.setEnabled(E4HandlerProxy.java:134)
+	at java.base@21.0.5/java.lang.invoke.LambdaForm$DMH/0x000001df251ac000.invokeVirtual(LambdaForm$DMH)
+	at java.base@21.0.5/java.lang.invoke.LambdaForm$MH/0x000001df25b60800.invoke(LambdaForm$MH)
+	at java.base@21.0.5/java.lang.invoke.LambdaForm$MH/0x000001df25002c00.invokeExact_MT(LambdaForm$MH)
+	at java.base@21.0.5/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:155)
+	at java.base@21.0.5/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base@21.0.5/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:299)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:233)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:91)
+	at org.eclipse.core.commands.Command.setEnabled(Command.java:856)
+	at org.eclipse.ui.menus.CommandContributionItem.isEnabled(CommandContributionItem.java:932)
+	at org.eclipse.ui.menus.CommandContributionItem.updateMenuItem(CommandContributionItem.java:536)
+	at org.eclipse.ui.menus.CommandContributionItem.update(CommandContributionItem.java:486)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:857)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:857)
+	at org.eclipse.ui.internal.Workbench.updateActiveWorkbenchWindowMenuManager(Workbench.java:3213)
+	at org.eclipse.ui.internal.Workbench.lambda$0(Workbench.java:3195)
+	at org.eclipse.ui.internal.Workbench$$Lambda/0x000001df254d7988.bindingManagerChanged(Unknown Source)
+	at org.eclipse.jface.bindings.BindingManager.fireBindingManagerChanged(BindingManager.java:896)
+	at org.eclipse.jface.bindings.BindingManager.setActiveBindings(BindingManager.java:2178)
+	at org.eclipse.jface.bindings.BindingManager.recomputeBindings(BindingManager.java:1762)
+	at org.eclipse.jface.bindings.BindingManager.contextManagerChanged(BindingManager.java:693)
+	at org.eclipse.core.commands.contexts.ContextManager.fireContextManagerChanged(ContextManager.java:164)
+	at org.eclipse.core.commands.contexts.ContextManager.setEventCaching(ContextManager.java:323)
+	at org.eclipse.core.commands.contexts.ContextManager.deferUpdates(ContextManager.java:85)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:787)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:686)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:681)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3236)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$11(WorkbenchPage.java:3118)
+	at org.eclipse.ui.internal.WorkbenchPage$$Lambda/0x000001df25f2d290.run(Unknown Source)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3116)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3086)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3077)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:546)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:506)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:377)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInSpecificEditor(EditorUtility.java:176)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:169)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:288)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:254)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
+	at org.eclipse.jdt.internal.ui.navigator.OpenAndExpand.run(OpenAndExpand.java:53)
+	at org.eclipse.ui.actions.RetargetAction.run(RetargetAction.java:215)
+	at org.eclipse.ui.navigator.CommonNavigatorManager$1.open(CommonNavigatorManager.java:184)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:799)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.JFaceUtil$$Lambda/0x000001df251e4c10.run(Unknown Source)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:796)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1110)
+	at org.eclipse.ui.navigator.CommonViewer.handleOpen(CommonViewer.java:451)
+	at org.eclipse.jface.viewers.StructuredViewer$$Lambda/0x000001df25750698.handleOpen(Unknown Source)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:295)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:330)
+>>>>>>> origin/main
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
@@ -8000,7 +8229,11 @@ Stack Trace
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+<<<<<<< HEAD
 	at org.eclipse.ui.internal.Workbench$$Lambda/0x0000000100302b20.run(Unknown Source)
+=======
+	at org.eclipse.ui.internal.Workbench$$Lambda/0x000001df2531c7c0.run(Unknown Source)
+>>>>>>> origin/main
 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
 	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
@@ -8010,6 +8243,7 @@ Stack Trace
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+<<<<<<< HEAD
 	at java.base@21.0.4/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
 	at java.base@21.0.4/java.lang.invoke.LambdaForm$MH/0x00000001000d5800.invoke(LambdaForm$MH)
 	at java.base@21.0.4/java.lang.invoke.LambdaForm$MH/0x00000001000c1c00.invokeExact_MT(LambdaForm$MH)
@@ -8723,3 +8957,14 @@ Caused by: java.io.FileNotFoundException: D:\Git\mingw64\share\git\git-for-windo
 	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
 	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:178)
 	... 73 more
+=======
+	at java.base@21.0.5/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+	at java.base@21.0.5/java.lang.invoke.LambdaForm$MH/0x000001df25019800.invoke(LambdaForm$MH)
+	at java.base@21.0.5/java.lang.invoke.LambdaForm$MH/0x000001df25002c00.invokeExact_MT(LambdaForm$MH)
+	at java.base@21.0.5/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:155)
+	at java.base@21.0.5/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base@21.0.5/java.lang.reflect.Method.invoke(Method.java:580)
+	at app//org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at app//org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at app//org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+>>>>>>> origin/main
