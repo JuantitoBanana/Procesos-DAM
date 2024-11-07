@@ -51,7 +51,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="Ejercicio8_ProductorConsumidorProfesor"/>
+			<item value="Ejercicio9_ProducConsBanco"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
