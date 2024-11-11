@@ -4,10 +4,6 @@ public class Entrada {
 	
 	private int id = 1;
 
-	public Entrada() {
-		
-	}
-
 	public int getId() {
 		return id;
 	}

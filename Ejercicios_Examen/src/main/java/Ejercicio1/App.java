@@ -11,8 +11,10 @@ public class App {
 		v2.setPriority(Thread.MAX_PRIORITY);
 		v2.start();
 		Ventanilla v3 = new Ventanilla("Ventanilla 3");
+		v3.setPriority(Thread.MIN_PRIORITY);
 		v3.start();
 		Ventanilla v4 = new Ventanilla("Ventanilla 4");
+		v4.setPriority(Thread.MIN_PRIORITY);
 		v4.start();
 	}
 

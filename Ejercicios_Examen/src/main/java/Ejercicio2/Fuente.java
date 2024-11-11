@@ -26,7 +26,7 @@ public class Fuente extends Thread{
 	                    almacenGotas.notifyAll();
 	                }
 
-	                Thread.sleep(1 + random.nextInt(10));
+	                Thread.sleep(random.nextInt(1, 11));
 	            } catch (InterruptedException e) {
 	                e.printStackTrace();
 	            }

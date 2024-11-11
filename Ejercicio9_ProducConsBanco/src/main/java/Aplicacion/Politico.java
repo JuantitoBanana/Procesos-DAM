@@ -1,19 +1,34 @@
-package Aplicacion;
+package Ejercicio9_Banco;
 
 
-public class Politico extends Thread{
-	private Dinero dinero;
-	
-	public Politico(String name, Dinero dinero) {
-		super(name);
-		this.dinero = dinero;
-	}
+public class Politico extends Thread {
 
-	@Override
-	public void run() {
-		super.run();
-		
-		System.out.println(Thread.currentThread().getName() + " : " + dinero.cogerDinero() + " €");
-	}
-	
+    private Banco b;
+    private int dineroTotalRobado = 0;
+    private int vecesRobado = 0;
+
+    public Politico(String name, Banco b) {
+        super(name);
+        this.b = b;
+        start();
+    }
+
+    @Override
+    public void run() {
+        super.run();
+
+        int dineroRobado = 0;
+
+        do{
+            dineroRobado = b.getDineroDisponible();
+            dineroTotalRobado += dineroRobado;
+            vecesRobado++;
+        } while (dineroRobado != 0);
+
+        System.out.println("El politico " + getName() + " ha robado " + dineroTotalRobado + "€, en " + vecesRobado + " veces.");
+    }
+
+    public int getDineroTotalRobado() {
+        return dineroTotalRobado;
+    }
 }

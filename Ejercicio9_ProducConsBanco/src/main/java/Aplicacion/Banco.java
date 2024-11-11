@@ -1,19 +1,39 @@
-package Aplicacion;
+package Ejercicio9_Banco;
 
 
-public class Banco extends Thread{
-	private Dinero dinero;
-	
-	public Banco(Dinero dinero) {
-		this.dinero = dinero;
-	}
+public class Banco {
 
-	@Override
-	public void run() {
-		super.run();
+    private int dineroDelBanco = 23000000;
+    private int dineroEnVentanilla = 0;
 
-		for (int i = 0; i < 10; i++) {
-			dinero.colocarDinero();		
-		}
-	}
+    public int getDineroDelBanco() {
+        return dineroDelBanco;
+    }
+
+    public synchronized int getDineroDisponible() {
+
+        try {
+            wait();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        int dinero = dineroEnVentanilla;
+        System.out.println("..............."+dinero+"-"+dineroEnVentanilla);
+        dineroEnVentanilla = 0;
+
+        return dinero;
+    }
+
+    public synchronized void setDineroEnVentanilla(int dineroEnVentanilla) {
+
+        dineroDelBanco -= dineroEnVentanilla;
+        this.dineroEnVentanilla = dineroEnVentanilla;
+        
+        if (dineroEnVentanilla == 0){
+            notifyAll();
+        } else {
+            notify();
+        }
+    }
 }
