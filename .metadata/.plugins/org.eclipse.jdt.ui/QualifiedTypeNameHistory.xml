@@ -32,4 +32,5 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="Ejercicio2.Fuente"/>
     <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.atomic.AtomicInteger"/>
 </qualifiedTypeNameHistroy>

@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Grado\Procesos-DAM\Ejem04_GruposYPrioridades"/>
 			<item value="C:\Grado\Procesos-DAM"/>
 			<item value="C:\Grado\Procesos-DAM\Ejem06_Wait_Notify\src\main\java\Aplicacion\Aplicacion.java"/>
 		</list>
@@ -51,6 +52,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Ejem09_DatosAtomicos"/>
 			<item value="Ejercicios_Examen"/>
 			<item value="Ejercicio9_ProducConsBanco"/>
 		</list>
