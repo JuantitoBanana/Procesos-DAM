@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Grado\Procesos-DAM\Ejem11_ExecuttorService"/>
 			<item value="C:\Grado\Procesos-DAM\Ejem04_GruposYPrioridades"/>
 			<item value="C:\Grado\Procesos-DAM"/>
 			<item value="C:\Grado\Procesos-DAM\Ejem06_Wait_Notify\src\main\java\Aplicacion\Aplicacion.java"/>
@@ -52,6 +53,13 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Ejercicio10_VariosClientes"/>
+			<item value="Ejem14_VariosClientes"/>
+			<item value="Ejem13_HolaMundoSockets"/>
+			<item value="EjerciciosExamen_Modificados"/>
+			<item value="Ejem12_Callable"/>
+			<item value="Ejem11_ExecuttorService"/>
+			<item value="Ejem10_ProductorConsumidorFacil"/>
 			<item value="Ejem09_DatosAtomicos"/>
 			<item value="Ejercicios_Examen"/>
 			<item value="Ejercicio9_ProducConsBanco"/>
