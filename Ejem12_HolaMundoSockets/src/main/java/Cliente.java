@@ -13,25 +13,33 @@ public class Cliente {
 			ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
 			ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
 			Scanner sc = new Scanner(System.in);
-			
-			Mensaje obj;
 			String cadena = "";
+			
+			Thread procesoServidor = new Thread(() -> {
+				Mensaje obj;
+				boolean continuar = true;
+				while(!Thread.currentThread().interrupted()) {
+					try {
+						obj = (Mensaje) ois.readObject();
+						System.out.println("Servidor: he recibido el mensaje (" + obj.mensaje() + ")");
+					} catch (ClassNotFoundException | IOException e) {
+						Thread.currentThread().interrupt();
+					}
+				}
+			});
+			procesoServidor.start();
+			
 			while(!cadena.toLowerCase().equals("fin"))
 			{
 				cadena=sc.nextLine();
 				
-				Mensaje mensaje = new Mensaje("Cliente " + socket.getLocalPort(), cadena);
+				Mensaje mensaje = new Mensaje("Cliente " + socket.getInetAddress().getHostAddress(), cadena);
 				
 				oos.writeObject(mensaje);
 				
-				try {
-					obj = (Mensaje) ois.readObject();
-					System.out.println("he recibido el mensaje (" + obj.mensaje() + ")");
-				} catch (ClassNotFoundException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
 			}
+			
+			
 
 		} catch (UnknownHostException e) {
 			// TODO Auto-generated catch block
