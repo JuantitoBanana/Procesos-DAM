@@ -13,21 +13,36 @@ public class Cliente {
 			ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
 			ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
 			Scanner sc = new Scanner(System.in);
+			
+			Mensaje msjBienvenida = (Mensaje) ois.readObject();
+			System.out.println("Servidor: " + msjBienvenida.mensaje());
+			
 			System.out.print("Introduce un nombre:");
 			String nombre = sc.nextLine();
-			Mensaje msj;
+			oos.writeObject(new Mensaje(nombre, ""));
+			
+			
 			String cadena = "";
 			
 			Thread procesoServidor = new Thread(() ->{
-				
+					Mensaje msj = null;
+					
+					try {
+						while(true) {
+							msj = (Mensaje) ois.readObject();
+							System.out.println("Servidor: " + msj.mensaje());
+							
+						}
+					} catch (Exception e) {
+						// TODO: handle exception
+					}
 			});
 			procesoServidor.start();
 			
 			while(true){
 				System.out.print("Introduce un mensaje: ");
 				cadena = sc.nextLine();
-				msj = new Mensaje(nombre, cadena);
-				oos.writeObject(msj);
+				oos.writeObject(new Mensaje(nombre, cadena));
 			}
 		} catch (UnknownHostException e) {
 			// TODO Auto-generated catch block
@@ -35,6 +50,9 @@ public class Cliente {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} catch (ClassNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
 		}
 	}
 }
