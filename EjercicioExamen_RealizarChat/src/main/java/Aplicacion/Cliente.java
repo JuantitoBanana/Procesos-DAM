@@ -14,13 +14,11 @@ public class Cliente {
 			ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
 			Scanner sc = new Scanner(System.in);
 			
-			Mensaje msjBienvenida = (Mensaje) ois.readObject();
-			System.out.println("Servidor: " + msjBienvenida.mensaje());
-			
 			System.out.print("Introduce un nombre:");
 			String nombre = sc.nextLine();
-			oos.writeObject(new Mensaje(nombre, ""));
 			
+			Mensaje msjBienvenida = (Mensaje) ois.readObject();
+			System.out.println("Servidor: " + msjBienvenida.mensaje());
 			
 			String cadena = "";
 			
