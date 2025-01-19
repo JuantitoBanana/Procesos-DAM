@@ -23,7 +23,7 @@ public class Cliente {
 				do {
 					socket = new Socket("localhost", 4444);
 					if(!socket.isConnected()) {
-						System.out.print("¿Quieres volver a intentar conectarte (Si/No): ");
+						System.out.print("Quieres volver a intentar conectarte?   (Si/No): ");
 						confirmacion = sc.nextLine();
 					}
 				} while (confirmacion.equalsIgnoreCase("Si"));
